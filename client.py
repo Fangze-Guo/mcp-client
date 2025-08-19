@@ -34,9 +34,8 @@ class MCPClient:
         if not self.openai_api_key:
             raise ValueError("未找到 OpenAI API Key")
 
+        # 创建 OpenIA client
         self.client = OpenAI(api_key=self.openai_api_key, base_url=self.base_url)
-
-        # 创建 OpenIAI client
         self.session: Optional[ClientSession] = None
 
     async def connect_to_server(self, server_script_path: str):

@@ -54,7 +54,7 @@ def format_weather(data: dict[str, Any] | str) -> str:
     :param data: 天气数据
     :return: 格式化后的天气信息
     """
-    # 如果传入的三字符串，先转换为字典
+    # 如果传入的是字符串，先转换为字典
     if isinstance(data, str):
         try:
             data = json.loads(data)
