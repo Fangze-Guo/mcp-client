@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/home/fetters/MediaLab/mcp-client"
+      ]
+    },
+    "weather": {
+        "command": "python",
+        "args": ["weather_server.py"]
+    },
+    "write": {
+        "command": "python",
+        "args": ["write_server.py"]
+    }
+  }
+}
